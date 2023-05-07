@@ -16,3 +16,11 @@
 - Starting the delimiter at the beginning of the line, even if output comes late: solution is using a carriage return to rewrite the line and replace the delim
 - Whenever you are asked for input, there will be a delim
 - To use from host computer, you would need to expose the port number through the firewall
+
+# TODO
+- Handle EOF, client disconnects themselves
+- Sync map for user database
+
+# Errors to Handle
+- With two concurrent connections
+    2023/05/07 19:20:49 reading loop:       write tcp 127.0.0.1:6060->127.0.0.1:36168: write: broken pipe
